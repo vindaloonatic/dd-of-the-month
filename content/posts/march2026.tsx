@@ -4,7 +4,7 @@ const March2026: Post = {
   _id: "march-2026",
   slug: "/posts/march-2026",
   title: "March 2026",
-  description: "dungeon1 job1",
+  description: "Heaven on High - GNB",
   Content: () => (
     <>
       <p>This post is written in JSX.</p>
