@@ -4,7 +4,6 @@ import Link from "next/link"
 export default function ArticlesPage() {
   return (
     <div className="prose mx-auto p-4">
-      <h1>Monthly Articles</h1>
       <div className="prose dark:prose-invert">
         {allPosts.map(post => (
           <article key={post._id}>

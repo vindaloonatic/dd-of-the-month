@@ -1,17 +1,14 @@
 import { Post } from "../types"
 
 const March2026: Post = {
-  _id: "march-2026",
+  _id: 1,
   slug: "/posts/march-2026",
   title: "March 2026",
   description: "Heaven on High - GNB",
   Content: () => (
     <>
-      <p>This post is written in JSX.</p>
-      <p>
-        I can use <strong>real components</strong>, not markdown
-      </p>
-      <p>just import the full component later into the content attribute instead of writing everything in this file</p>
+     <p>Run submissions for March 2026 are now open!</p>
+     <p>Submit your run to the Discord if you are interested in being included: </p>
     </>
   ),
 }

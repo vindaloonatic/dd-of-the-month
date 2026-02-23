@@ -6,6 +6,7 @@ export default function Home() {
         <p>This is the companion site for the discord found here:</p>
         <p>If you want to find out how to participate, please feel free to join the discord server and continue reading below. If you want to check out previous month submissions check out the Articles tab above.</p>
       </div>
+      <p>Make this below section collapse / expand</p>
       <h2 className="text-center">What is Deep Dungeon of the Month Club? How do I join?</h2>
       <p>Deep Dungeon of the Month Club is a community-driven project where participants share their deep dungeon adventures. Each month, we decide on a job and deep dungeon to run and all it takes to participate is to start your own run!</p>
       <h2 className="text-center">Is there a goal? Are there prizes?</h2>

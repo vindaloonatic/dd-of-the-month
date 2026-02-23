@@ -1,7 +1,7 @@
 import { ReactNode } from "react"
 
 export type Post = {
-  _id: string
+  _id: number
   slug: string
   title: string
   description?: string

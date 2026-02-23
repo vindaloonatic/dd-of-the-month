@@ -1,21 +1,26 @@
-import { allPosts } from "@/content/posts"
-import { notFound } from "next/navigation"
+import { allPosts } from "@/content/posts";
+import { notFound } from "next/navigation";
 
+type Params = { slug: string[] };
 type PostPageProps = {
-  params: {
-    slug: string
-  }
-}
+  params: Params | Promise<Params>;
+};
 
-export default function PostPage({ params }: PostPageProps) {
-  const post = allPosts.find(p => p.slug.endsWith(params.slug))
+export default async function PostPage({ params }: PostPageProps) {
+  // unwrap the promise; `params` is async in RSCs
+  const { slug } = await params;
 
-  if (!post) notFound()
+  // turn ["march‑2026"] → "march‑2026" (or join multiple segments)
+  const slugStr = Array.isArray(slug) ? slug.join("/") : slug;
+
+  const post = allPosts.find((p) => p.slug.endsWith(slugStr));
+
+  if (!post) return notFound();
 
   return (
     <article className="prose dark:prose-invert">
       <h1>{post.title}</h1>
       <post.Content />
     </article>
-  )
+  );
 }
