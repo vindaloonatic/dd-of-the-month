@@ -8,7 +8,7 @@ const March2026: Post = {
   Content: () => (
     <>
      <p>Run submissions for March 2026 are now open!</p>
-     <p>Submit your run to the Discord if you are interested in being included: </p>
+     <p>Submit your run to the <a href="https://discord.gg/CBaKwGPqXH" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline hover:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-300">Discord</a> if you are interested in being included.</p>
     </>
   ),
 }

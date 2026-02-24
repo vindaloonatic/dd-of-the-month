@@ -7,7 +7,7 @@ export default function ArticlesPage() {
       <div className="prose dark:prose-invert">
         {allPosts.map(post => (
           <article key={post._id}>
-            <Link href={post.slug}>
+            <Link href={post.slug} className="text-blue-600 hover:underline">
               <h2>{post.title}</h2>
             </Link>
             {post.description && <p>{post.description}</p>}
