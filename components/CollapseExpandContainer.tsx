@@ -17,7 +17,7 @@ export default function CollapseExpandContainer({
   accordionType,
   children,
 }: CollapseExpandContainerProps) {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const items = Children.map(children, (child, idx) => {
     if (!isValidElement<CollapseExpandItemProps>(child)) return child;

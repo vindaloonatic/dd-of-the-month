@@ -7,10 +7,8 @@ type PostPageProps = {
 };
 
 export default async function PostPage({ params }: PostPageProps) {
-  // unwrap the promise; `params` is async in RSCs
   const { slug } = await params;
 
-  // turn ["march‑2026"] → "march‑2026" (or join multiple segments)
   const slugStr = Array.isArray(slug) ? slug.join("/") : slug;
 
   const post = allPosts.find((p) => p.slug.endsWith(slugStr));

@@ -18,7 +18,7 @@ export default function CollapseExpandItem({ heading, children, isOpen: initialO
   const panelId = `accordion-panel-${id}`;
 
   return (
-    <div className="border-b">
+    <div className="">
       <h2 id={buttonId}>
         <button
           type="button"
@@ -33,7 +33,8 @@ export default function CollapseExpandItem({ heading, children, isOpen: initialO
       </h2>
       <div
         id={panelId}
-        className={open ? '' : 'hidden border border-s-0 border-e-0 border-t-0 border-b-default'} aria-labelledby={buttonId}
+        className={open ? 'border border-t-0 border-x-0 border-b-default' : 'hidden'}
+        aria-labelledby={buttonId}
       >
         <div className="p-4 md:p-5">
           {children}

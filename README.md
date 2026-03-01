@@ -13,3 +13,8 @@ pnpm dev
 # or
 bun dev
 ```
+
+
+Special Thanks:
+
+- Ese for some UI feedback and image contribution

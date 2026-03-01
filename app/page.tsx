@@ -4,15 +4,7 @@ import CollapseExpandItem from '../components/CollapseExpandItem';
 export default function Home() {
   return (
     <div className="">
-      <h1 className="text-center text-3xl font-bold mb-8">Welcome to Deep Dungeon of the Month Club</h1>
-      <div className='text-center border-2 mb-8'>
-        <p>Something nice like an img will exist here soon</p>
-      </div>
-      <div>
-        <p>This is the companion site for the discord found <a href="https://discord.gg/CBaKwGPqXH" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline hover:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-300">here</a></p>
-        <br/>
-        <p>If you want to participate, please feel free to join the discord and continue reading below. If you want to check out submissions from previous months click the Articles tab above.</p>
-      </div>
+      <h1 className="text-[#2A2E6E] text-center text-3xl font-bold mt-8 mb-8">Welcome to Deep Dungeon of the Month Club</h1>
       <CollapseExpandContainer accordionType="collapse">
         <CollapseExpandItem heading="What is Deep Dungeon of the Month Club?">
           <p>Deep Dungeon of the Month Club is a community-driven project where participants share their deep dungeon adventures. Each month, we decide on a job and deep dungeon to run and all it takes to participate is to start your own run!</p>
@@ -37,7 +29,6 @@ export default function Home() {
           <p>Your participation and/or submissions may be the encouragment or inspiration for someone else to try their own runs, so every submission is appreciated, but not required.</p>
         </CollapseExpandItem>
       </CollapseExpandContainer>
-      <div className="text-center mt-8">If you want to contribute to the site, the repo is <a href="https://github.com/vindaloonatic/dd-of-the-month" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline hover:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-300">here</a>.</div>
     </div>
   )
 }
