@@ -46,7 +46,7 @@ export default function RootLayout({
             />
           </nav>
         </header>
-        <main className="flex-grow max-w-full p-4 md:max-w-3xl md:mx-auto md:p-6">
+        <main className="flex-grow max-w-full md:max-w-3xl md:mx-auto">
           {children}
         </main>
         <footer className="bg-[#2A2E6E] text-white">

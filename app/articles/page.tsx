@@ -13,7 +13,6 @@ export default function ArticlesPage() {
             {post.description && <p>{post.description}</p>}
           </article>
         ))}
-
       </div>
     </div>
   );
