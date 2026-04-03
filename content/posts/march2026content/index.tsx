@@ -61,7 +61,7 @@ export default function March2026Content() {
         }}
       >
         <h2 style={{ marginTop: 0, marginBottom: "1.5rem", fontSize: "1.5rem" }}>
-          Notable Achievements
+          Spotlight
         </h2>
         <div
           style={{
@@ -70,30 +70,94 @@ export default function March2026Content() {
             gap: "1.5rem",
           }}
         >
-          <div style={{ padding: "1rem", backgroundColor: "rgba(200, 220, 255, 0.5)", borderRadius: "4px" }}>
-            <p style={{ margin: "0 0 0.5rem 0", fontWeight: "bold" }}>Highest Score</p>
-            <p style={{ margin: 0, fontSize: "1.1rem" }}>{highestScore.name}</p>
-            <p style={{ margin: "0.5rem 0 0 0", color: "#666" }}>{highestScore.score}</p>
+          <div style={{ padding: "1rem", backgroundColor: "rgba(200, 220, 255, 0.5)", borderRadius: "4px", display: "flex", alignItems: "center", gap: "0.75rem" }}>
+            <div style={{ flex: 1 }}>
+              <p style={{ margin: "0 0 0.5rem 0", fontWeight: "bold" }}>Highest Score</p>
+              <p style={{ margin: 0, fontSize: "1.1rem" }}>{highestScore.name}</p>
+              <p style={{ margin: "0.5rem 0 0 0", color: "#666" }}>{highestScore.score}</p>
+            </div>
+            <img
+              src={highestScore.photo}
+              alt={`${highestScore.name} portrait`}
+              style={{
+                width: "60px",
+                height: "60px",
+                borderRadius: "4px",
+                objectFit: "cover",
+                flexShrink: 0,
+              }}
+            />
           </div>
-          <div style={{ padding: "1rem", backgroundColor: "rgba(255, 200, 200, 0.5)", borderRadius: "4px" }}>
-            <p style={{ margin: "0 0 0.5rem 0", fontWeight: "bold" }}>Most Kills</p>
-            <p style={{ margin: 0, fontSize: "1.1rem" }}>{mostKills.name}</p>
-            <p style={{ margin: "0.5rem 0 0 0", color: "#666" }}>{mostKills.kills.toLocaleString()}</p>
+          <div style={{ padding: "1rem", backgroundColor: "rgba(255, 200, 200, 0.5)", borderRadius: "4px", display: "flex", alignItems: "center", gap: "0.75rem" }}>
+            <div style={{ flex: 1 }}>
+              <p style={{ margin: "0 0 0.5rem 0", fontWeight: "bold" }}>Most Kills</p>
+              <p style={{ margin: 0, fontSize: "1.1rem" }}>{mostKills.name}</p>
+              <p style={{ margin: "0.5rem 0 0 0", color: "#666" }}>{mostKills.kills.toLocaleString()}</p>
+            </div>
+            <img
+              src={mostKills.photo}
+              alt={`${mostKills.name} portrait`}
+              style={{
+                width: "60px",
+                height: "60px",
+                borderRadius: "4px",
+                objectFit: "cover",
+                flexShrink: 0,
+              }}
+            />
           </div>
-          <div style={{ padding: "1rem", backgroundColor: "rgba(200, 255, 200, 0.5)", borderRadius: "4px" }}>
-            <p style={{ margin: "0 0 0.5rem 0", fontWeight: "bold" }}>Most Poms</p>
-            <p style={{ margin: 0, fontSize: "1.1rem" }}>{mostPoms.name}</p>
-            <p style={{ margin: "0.5rem 0 0 0", color: "#666" }}>{mostPoms.poms}</p>
+          <div style={{ padding: "1rem", backgroundColor: "rgba(200, 255, 200, 0.5)", borderRadius: "4px", display: "flex", alignItems: "center", gap: "0.75rem" }}>
+            <div style={{ flex: 1 }}>
+              <p style={{ margin: "0 0 0.5rem 0", fontWeight: "bold" }}>Most Poms</p>
+              <p style={{ margin: 0, fontSize: "1.1rem" }}>{mostPoms.name}</p>
+              <p style={{ margin: "0.5rem 0 0 0", color: "#666" }}>{mostPoms.poms}</p>
+            </div>
+            <img
+              src={mostPoms.photo}
+              alt={`${mostPoms.name} portrait`}
+              style={{
+                width: "60px",
+                height: "60px",
+                borderRadius: "4px",
+                objectFit: "cover",
+                flexShrink: 0,
+              }}
+            />
           </div>
-          <div style={{ padding: "1rem", backgroundColor: "rgba(255, 255, 150, 0.5)", borderRadius: "4px" }}>
-            <p style={{ margin: "0 0 0.5rem 0", fontWeight: "bold" }}>Biggest Landmine</p>
-            <p style={{ margin: 0, fontSize: "1.1rem" }}>{biggestLandmine.name}</p>
-            <p style={{ margin: "0.5rem 0 0 0", color: "#666" }}>{biggestLandmine.landmine}</p>
+          <div style={{ padding: "1rem", backgroundColor: "rgba(255, 255, 150, 0.5)", borderRadius: "4px", display: "flex", alignItems: "center", gap: "0.75rem" }}>
+            <div style={{ flex: 1 }}>
+              <p style={{ margin: "0 0 0.5rem 0", fontWeight: "bold" }}>Biggest Landmine</p>
+              <p style={{ margin: 0, fontSize: "1.1rem" }}>{biggestLandmine.name}</p>
+            </div>
+            <img
+              src={biggestLandmine.photo}
+              alt={`${biggestLandmine.name} portrait`}
+              style={{
+                width: "60px",
+                height: "60px",
+                borderRadius: "4px",
+                objectFit: "cover",
+                flexShrink: 0,
+              }}
+            />
           </div>
-          <div style={{ padding: "1rem", backgroundColor: "rgba(255, 200, 255, 0.5)", borderRadius: "4px" }}>
-            <p style={{ margin: "0 0 0.5rem 0", fontWeight: "bold" }}>Fastest Clear</p>
-            <p style={{ margin: 0, fontSize: "1.1rem" }}>{fastestClear.name}</p>
-            <p style={{ margin: "0.5rem 0 0 0", color: "#666" }}>{fastestClear.time}</p>
+          <div style={{ padding: "1rem", backgroundColor: "rgba(255, 200, 255, 0.5)", borderRadius: "4px", display: "flex", alignItems: "center", gap: "0.75rem" }}>
+            <div style={{ flex: 1 }}>
+              <p style={{ margin: "0 0 0.5rem 0", fontWeight: "bold" }}>Fastest Clear</p>
+              <p style={{ margin: 0, fontSize: "1.1rem" }}>{fastestClear.name}</p>
+              <p style={{ margin: "0.5rem 0 0 0", color: "#666" }}>{fastestClear.time}</p>
+            </div>
+            <img
+              src={fastestClear.photo}
+              alt={`${fastestClear.name} portrait`}
+              style={{
+                width: "60px",
+                height: "60px",
+                borderRadius: "4px",
+                objectFit: "cover",
+                flexShrink: 0,
+              }}
+            />
           </div>
         </div>
       </div>
@@ -121,32 +185,28 @@ export default function March2026Content() {
         >
           {participants.map((participant) => (
             <div
-              key={participant}
-              style={{
+            key={participant.name}
+            style={{
                 padding: "0.75rem",
-                backgroundColor: newPersonalBests.includes(participant)
-                  ? "rgba(200, 255, 200, 0.6)"
-                  : "rgba(240, 240, 240, 1)",
+                backgroundColor: "rgba(200, 255, 200, 0.6)",
                 borderRadius: "4px",
-                borderLeft: newPersonalBests.includes(participant)
-                  ? "4px solid #4caf50"
-                  : "4px solid #ccc",
+                borderLeft: "4px solid #4caf50",
                 display: "flex",
                 alignItems: "center",
                 gap: "0.75rem",
               }}
             >
               <div style={{ flex: 1 }}>
-                <p style={{ margin: 0 }}>{participant}</p>
-                {newPersonalBests.includes(participant) && (
+                <p style={{ margin: 0 }}>{participant.name}</p>
+                {newPersonalBests.includes(participant.name) && (
                   <p style={{ margin: "0.25rem 0 0 0", fontSize: "0.85rem", color: "#2e7d32" }}>
                     ⭐ New PB
                   </p>
                 )}
               </div>
               <img
-                src="https://img2.finalfantasyxiv.com/f/dafd63f0b3ce97e8283a4d153f0acd06_0cdf051c93865faa15cbc5cd3d2b69fbfc0.jpg?1772408004"
-                alt={`${participant} portrait`}
+                src={participant.photo}
+                alt={`${participant.name} portrait`}
                 style={{
                   width: "60px",
                   height: "60px",
