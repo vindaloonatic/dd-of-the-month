@@ -8,6 +8,7 @@ import {
   fastestClear,
   newPersonalBests,
 } from "./participants";
+import Image from "next/image";
 
 export default function March2026Content() {
   return (
@@ -26,11 +27,6 @@ export default function March2026Content() {
         padding: "2rem 1rem",
       }}
     >
-      <div className="flex-col-container justify-center items-center pt-16">
-        <h1 className="article-title-header">March 2026</h1>
-        <p>Heaven on High - GNB</p>
-      </div>
-
       {/* Introduction */}
       <div
         style={{
@@ -42,11 +38,21 @@ export default function March2026Content() {
           boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
         }}
       >
-        <p>
+        <div className="flex-col-container items-center">
+          <Image
+            src="/gnb_hoh.png"
+            alt="Heaven on High Banner"
+            width={551}
+            height={110}
+            style={{ borderRadius: "8px", marginBottom: "1.5rem" }}
+          />
+        </div>
+        <p className="mb-6">
           Our first deep dungeon of the month is complete! The participation level was much higher
           than anticipated and it was great to see people trying to challenge themselves or try
           something new.
         </p>
+        <p>Thanks to everyone who participated and contributed to the community feeling and congratulations to everyone who met any of their goals. This was a great first month.</p>
       </div>
 
       {/* Achievements Section */}
@@ -61,7 +67,7 @@ export default function March2026Content() {
         }}
       >
         <h2 style={{ marginTop: 0, marginBottom: "1.5rem", fontSize: "1.5rem" }}>
-          Spotlight
+          Spotlights
         </h2>
         <div
           style={{
@@ -106,15 +112,15 @@ export default function March2026Content() {
               }}
             />
           </div>
-          <div style={{ padding: "1rem", backgroundColor: "rgba(200, 255, 200, 0.5)", borderRadius: "4px", display: "flex", alignItems: "center", gap: "0.75rem" }}>
+          <div style={{ padding: "1rem", backgroundColor: "rgba(255, 200, 255, 0.5)", borderRadius: "4px", display: "flex", alignItems: "center", gap: "0.75rem" }}>
             <div style={{ flex: 1 }}>
-              <p style={{ margin: "0 0 0.5rem 0", fontWeight: "bold" }}>Most Poms</p>
-              <p style={{ margin: 0, fontSize: "1.1rem" }}>{mostPoms.name}</p>
-              <p style={{ margin: "0.5rem 0 0 0", color: "#666" }}>{mostPoms.poms}</p>
+              <p style={{ margin: "0 0 0.5rem 0", fontWeight: "bold" }}>Fastest Clear</p>
+              <p style={{ margin: 0, fontSize: "1.1rem" }}>{fastestClear.name}</p>
+              <p style={{ margin: "0.5rem 0 0 0", color: "#666" }}>{fastestClear.time}</p>
             </div>
             <img
-              src={mostPoms.photo}
-              alt={`${mostPoms.name} portrait`}
+              src={fastestClear.photo}
+              alt={`${fastestClear.name} portrait`}
               style={{
                 width: "60px",
                 height: "60px",
@@ -125,31 +131,31 @@ export default function March2026Content() {
             />
           </div>
           <div style={{ padding: "1rem", backgroundColor: "rgba(255, 255, 150, 0.5)", borderRadius: "4px", display: "flex", alignItems: "center", gap: "0.75rem" }}>
+              <div style={{ flex: 1 }}>
+                <p style={{ margin: "0 0 0.5rem 0", fontWeight: "bold" }}>Biggest Landmine</p>
+                <p style={{ margin: 0, fontSize: "1.1rem" }}>{biggestLandmine.name}</p>
+              </div>
+              <img
+                src={biggestLandmine.photo}
+                alt={`${biggestLandmine.name} portrait`}
+                style={{
+                  width: "60px",
+                  height: "60px",
+                  borderRadius: "4px",
+                  objectFit: "cover",
+                  flexShrink: 0,
+                }}
+              />
+            </div>
+          <div style={{ padding: "1rem", backgroundColor: "rgba(200, 255, 200, 0.5)", borderRadius: "4px", display: "flex", alignItems: "center", gap: "0.75rem" }}>
             <div style={{ flex: 1 }}>
-              <p style={{ margin: "0 0 0.5rem 0", fontWeight: "bold" }}>Biggest Landmine</p>
-              <p style={{ margin: 0, fontSize: "1.1rem" }}>{biggestLandmine.name}</p>
+              <p style={{ margin: "0 0 0.5rem 0", fontWeight: "bold" }}>Most Poms</p>
+              <p style={{ margin: 0, fontSize: "1.1rem" }}>{mostPoms.name}</p>
+              <p style={{ margin: "0.5rem 0 0 0", color: "#666" }}>{mostPoms.poms}</p>
             </div>
             <img
-              src={biggestLandmine.photo}
-              alt={`${biggestLandmine.name} portrait`}
-              style={{
-                width: "60px",
-                height: "60px",
-                borderRadius: "4px",
-                objectFit: "cover",
-                flexShrink: 0,
-              }}
-            />
-          </div>
-          <div style={{ padding: "1rem", backgroundColor: "rgba(255, 200, 255, 0.5)", borderRadius: "4px", display: "flex", alignItems: "center", gap: "0.75rem" }}>
-            <div style={{ flex: 1 }}>
-              <p style={{ margin: "0 0 0.5rem 0", fontWeight: "bold" }}>Fastest Clear</p>
-              <p style={{ margin: 0, fontSize: "1.1rem" }}>{fastestClear.name}</p>
-              <p style={{ margin: "0.5rem 0 0 0", color: "#666" }}>{fastestClear.time}</p>
-            </div>
-            <img
-              src={fastestClear.photo}
-              alt={`${fastestClear.name} portrait`}
+              src={mostPoms.photo}
+              alt={`${mostPoms.name} portrait`}
               style={{
                 width: "60px",
                 height: "60px",
@@ -185,8 +191,8 @@ export default function March2026Content() {
         >
           {participants.map((participant) => (
             <div
-            key={participant.name}
-            style={{
+              key={participant.name}
+              style={{
                 padding: "0.75rem",
                 backgroundColor: "rgba(200, 255, 200, 0.6)",
                 borderRadius: "4px",
@@ -218,6 +224,53 @@ export default function March2026Content() {
             </div>
           ))}
         </div>
+      </div>
+
+      {/* Clips Section */}
+      <div
+        style={{
+          backgroundColor: "rgba(255, 255, 255, 0.95)",
+          borderRadius: "8px",
+          padding: "2rem",
+          maxWidth: "900px",
+          margin: "2rem auto",
+          boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+        }}
+      >
+        <h2 style={{ marginTop: 0, marginBottom: "1.5rem", fontSize: "1.5rem" }}>
+          Clip showcase coming soon!
+        </h2>
+        <p>Just need some extra time to edit</p>
+      </div>
+
+      <div
+        style={{
+          backgroundColor: "rgba(255, 255, 255, 0.95)",
+          borderRadius: "8px",
+          padding: "2rem",
+          maxWidth: "900px",
+          margin: "2rem auto",
+          boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          textAlign: "center",
+        }}
+      >
+        <h2 style={{ marginTop: 0, marginBottom: "1.5rem", fontSize: "1.5rem" }}>
+          Thanks to everyone who participated this month!
+        </h2>
+        <img
+          src={getImageUrl("march-2026-gnb-hoh/march_2026_all.png")}
+          alt="Thank you banner"
+          style={{
+            borderRadius: "8px",
+            marginBottom: "1.5rem",
+            width: "400px",
+            height: "348px",
+            objectFit: "contain",
+          }}
+        />
       </div>
     </div>
   );

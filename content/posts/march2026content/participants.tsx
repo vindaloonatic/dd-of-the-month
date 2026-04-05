@@ -1,8 +1,8 @@
-export const highestScore = {name: 'Arahi Ataragi', score: 1.928, photo: "https://img2.finalfantasyxiv.com/f/fb280f8cf73c229fbd954f9f6859f856_fce4949e615393e574f2d57134b31fc1fc0.jpg?1775242250"};
+export const highestScore = {name: 'Arahi Ataragi', score: "1.928M", photo: "https://img2.finalfantasyxiv.com/f/fb280f8cf73c229fbd954f9f6859f856_fce4949e615393e574f2d57134b31fc1fc0.jpg?1775242250"};
 export const mostKills = {name: 'Arahi Ataragi', kills: 1372, photo: "https://img2.finalfantasyxiv.com/f/fb280f8cf73c229fbd954f9f6859f856_fce4949e615393e574f2d57134b31fc1fc0.jpg?1775242250"};
 export const mostPoms = {name: 'Cecilla Slayer', poms: 28, photo: "https://img2.finalfantasyxiv.com/f/a14a9ca72f95cb59a2065172210a3f20_5c8ecfbc673e1287a9b5e85423fe1657fc0.jpg?1775243469"};
 export const biggestLandmine = {name: 'Willow Greed', landmine: 10, photo: "https://img2.finalfantasyxiv.com/f/4890371a09a9ea493b3870366870b6df_ba22853447012a24cee115315d6a5bebfc0.jpg?1775241461"};
-export const fastestClear = {name: 'Ashja Leonardus', time: '3:53:30', photo: "https://img2.finalfantasyxiv.com/f/434176e58c1e4d9be77d42109713c575_c33f640c0cdd35f7def85b8aa31a0007fc0.jpg?1775241439"};
+export const fastestClear = {name: 'Ashja Leonardus', time: '3h53m30s', photo: "https://img2.finalfantasyxiv.com/f/434176e58c1e4d9be77d42109713c575_c33f640c0cdd35f7def85b8aa31a0007fc0.jpg?1775241439"};
 
 export const newPersonalBests = ['Velvet Leveilleur', 'Ese\'al Arelius', 'Andrew Worg', 'Alan Third', 'Sadie Sassafras', 'Aerin Moore', 'Alan Third', 'Lexy Yisui', 'Brena Inari', 'Perfidious Serenity', 'Erin Sedai', 'Shizuka Moonfire', 'Ashja Leonardus', 'Blank Mettle', 'Saria Silence', 'Victoria Nyala', 'Larentia Crossgale', 'Jah Firoth', 'Drendin Vandar', 'Levra Zhaldiz', 'Kenai Denaka', 'Faolan Ambroz', 'Nyxsis Dedanann', 'L\'eena Moulinet'];
 export const newAttempters = [];
