@@ -6,7 +6,7 @@ const April2026: Post = {
   title: "April 2026",
   description: "Pilgrim's Traverse - VPR",
   Content: () => (
-    <div className="m-6">Run submissions are open for April 2026.</div>
+    <div className="m-6">Run submissions are closed for April 2026. Month recap coming soon.</div>
   ),
 }
 
