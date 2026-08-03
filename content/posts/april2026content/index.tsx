@@ -1,19 +1,17 @@
+import { getImageUrl } from "@/lib/imageUrls";
 import {
   participants,
   highestScore,
-  mostKills,
-  mostPoms,
-  biggestLandmine,
   fastestClear,
-  newPersonalBests,
+  fullInventory,
 } from "./participants";
 import Image from "next/image";
 
-export default function March2026Content() {
+export default function April2026Content() {
   return (
     <div
       style={{
-        backgroundImage: "url('/outside_hohj.png')",
+        backgroundImage: "url('/outside_pt.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundAttachment: "fixed",
@@ -39,7 +37,7 @@ export default function March2026Content() {
       >
         <div className="flex-col-container items-center">
           <Image
-            src="/gnb_hoh.png"
+            src="/vpr_pt.png"
             alt="Heaven on High Banner"
             width={551}
             height={110}
@@ -47,11 +45,9 @@ export default function March2026Content() {
           />
         </div>
         <p className="mb-6">
-          Our first deep dungeon of the month is complete! The participation level was much higher
-          than anticipated and it was great to see people trying to challenge themselves or try
-          something new.
+          April brought us the newest Deep Dungeon with one of the new jobs. While PT is on the more beginner side of the spectrum, it was still a challenge for some and we saw some new faces this month, which is great and one of the goals of this community.
         </p>
-        <p>Thanks to everyone who participated and contributed to the community feeling and congratulations to everyone who met any of their goals. This was a great first month.</p>
+        <p>Thanks to all participants and congratulations to everyone who set new records and achieved their personal goals this month!</p>
       </div>
 
       {/* Achievements Section */}
@@ -95,24 +91,6 @@ export default function March2026Content() {
           </div>
           <div style={{ padding: "1rem", backgroundColor: "rgba(255, 200, 200, 0.5)", borderRadius: "4px", display: "flex", alignItems: "center", gap: "0.75rem" }}>
             <div style={{ flex: 1 }}>
-              <p style={{ margin: "0 0 0.5rem 0", fontWeight: "bold" }}>Most Kills</p>
-              <p style={{ margin: 0, fontSize: "1.1rem" }}>{mostKills.name}</p>
-              <p style={{ margin: "0.5rem 0 0 0", color: "#666" }}>{mostKills.kills.toLocaleString()}</p>
-            </div>
-            <img
-              src={mostKills.photo}
-              alt={`${mostKills.name} portrait`}
-              style={{
-                width: "60px",
-                height: "60px",
-                borderRadius: "4px",
-                objectFit: "cover",
-                flexShrink: 0,
-              }}
-            />
-          </div>
-          <div style={{ padding: "1rem", backgroundColor: "rgba(255, 200, 255, 0.5)", borderRadius: "4px", display: "flex", alignItems: "center", gap: "0.75rem" }}>
-            <div style={{ flex: 1 }}>
               <p style={{ margin: "0 0 0.5rem 0", fontWeight: "bold" }}>Fastest Clear</p>
               <p style={{ margin: 0, fontSize: "1.1rem" }}>{fastestClear.name}</p>
               <p style={{ margin: "0.5rem 0 0 0", color: "#666" }}>{fastestClear.time}</p>
@@ -131,12 +109,12 @@ export default function March2026Content() {
           </div>
           <div style={{ padding: "1rem", backgroundColor: "rgba(255, 255, 150, 0.5)", borderRadius: "4px", display: "flex", alignItems: "center", gap: "0.75rem" }}>
               <div style={{ flex: 1 }}>
-                <p style={{ margin: "0 0 0.5rem 0", fontWeight: "bold" }}>Biggest Landmine</p>
-                <p style={{ margin: 0, fontSize: "1.1rem" }}>{biggestLandmine.name}</p>
+                <p style={{ margin: "0 0 0.5rem 0", fontWeight: "bold" }}>Full Inventory</p>
+                <p style={{ margin: 0, fontSize: "1.1rem" }}>{fullInventory.name}</p>
               </div>
               <img
-                src={biggestLandmine.photo}
-                alt={`${biggestLandmine.name} portrait`}
+                src={fullInventory.photo}
+                alt={`${fullInventory.name} portrait`}
                 style={{
                   width: "60px",
                   height: "60px",
@@ -146,24 +124,6 @@ export default function March2026Content() {
                 }}
               />
             </div>
-          <div style={{ padding: "1rem", backgroundColor: "rgba(200, 255, 200, 0.5)", borderRadius: "4px", display: "flex", alignItems: "center", gap: "0.75rem" }}>
-            <div style={{ flex: 1 }}>
-              <p style={{ margin: "0 0 0.5rem 0", fontWeight: "bold" }}>Most Poms</p>
-              <p style={{ margin: 0, fontSize: "1.1rem" }}>{mostPoms.name}</p>
-              <p style={{ margin: "0.5rem 0 0 0", color: "#666" }}>{mostPoms.poms}</p>
-            </div>
-            <img
-              src={mostPoms.photo}
-              alt={`${mostPoms.name} portrait`}
-              style={{
-                width: "60px",
-                height: "60px",
-                borderRadius: "4px",
-                objectFit: "cover",
-                flexShrink: 0,
-              }}
-            />
-          </div>
         </div>
       </div>
 
@@ -203,11 +163,6 @@ export default function March2026Content() {
             >
               <div style={{ flex: 1 }}>
                 <p style={{ margin: 0 }}>{participant.name}</p>
-                {newPersonalBests.includes(participant.name) && (
-                  <p style={{ margin: "0.25rem 0 0 0", fontSize: "0.85rem", color: "#2e7d32" }}>
-                    ⭐ New PB
-                  </p>
-                )}
               </div>
               <img
                 src={participant.photo}
@@ -224,23 +179,6 @@ export default function March2026Content() {
           ))}
         </div>
       </div>
-
-      {/* Clips Section */}
-      {/* <div
-        style={{
-          backgroundColor: "rgba(255, 255, 255, 0.95)",
-          borderRadius: "8px",
-          padding: "2rem",
-          maxWidth: "900px",
-          margin: "2rem auto",
-          boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-        }}
-      >
-        <h2 style={{ marginTop: 0, marginBottom: "1.5rem", fontSize: "1.5rem" }}>
-          Clip showcase coming soon!
-        </h2>
-        <p>Just need some extra time to edit</p>
-      </div> */}
 
       <div
         style={{
@@ -259,17 +197,6 @@ export default function March2026Content() {
         <h2 style={{ marginTop: 0, marginBottom: "1.5rem", fontSize: "1.5rem" }}>
           Thanks to everyone who participated this month!
         </h2>
-        <img
-          src="/march_2026_all.png"
-          alt="Thank you banner"
-          style={{
-            borderRadius: "8px",
-            marginBottom: "1.5rem",
-            width: "400px",
-            height: "348px",
-            objectFit: "contain",
-          }}
-        />
       </div>
     </div>
   );
