@@ -13,7 +13,7 @@ export default function March2026Content() {
   return (
     <div
       style={{
-        backgroundImage: "url('/outside_hohj.png')",
+        backgroundImage: "url('https://pub-341f1e8e5893474ca7fc5cafd6473134.r2.dev/outside_hohj.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundAttachment: "fixed",
@@ -260,7 +260,7 @@ export default function March2026Content() {
           Thanks to everyone who participated this month!
         </h2>
         <img
-          src="/march_2026_all.png"
+          src="https://pub-341f1e8e5893474ca7fc5cafd6473134.r2.dev/march_2026_all.png"
           alt="Thank you banner"
           style={{
             borderRadius: "8px",
