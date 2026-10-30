@@ -10,7 +10,7 @@ export default function May2026Content() {
     <div
       style={{
         backgroundImage:
-          "url('https://pub-341f1e8e5893474ca7fc5cafd6473134.r2.dev/outside_pt.png')",
+          "url('https://pub-341f1e8e5893474ca7fc5cafd6473134.r2.dev/potd_outside.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundAttachment: "fixed",
