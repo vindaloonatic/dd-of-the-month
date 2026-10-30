@@ -4,5 +4,7 @@ import May2026 from "./may2026"
 import June2026 from "./june2026"
 import July2026 from "./july2026"
 import August2026 from "./august2026"
+import September2026 from "./september2026"
+import October2026 from "./october2026"
 
-export const allPosts = [March2026, April2026, May2026, June2026, July2026, August2026]
+export const allPosts = [March2026, April2026, May2026, June2026, July2026, August2026, September2026, October2026]

@@ -6,7 +6,7 @@ const August2026: Post = {
   title: "August 2026",
   description: "Heaven on High - RPR",
   Content: () => (
-    <div className="m-6">Run submissions are open for August 2026.</div>
+    <div className="m-6">Run submissions are closed for August 2026.</div>
   ),
 }
 

@@ -1,4 +1,5 @@
 import { Post } from "../types"
+import May2026Content from "./may2026content"
 
 const May2026: Post = {
   _id: 3,
@@ -6,7 +7,7 @@ const May2026: Post = {
   title: "May 2026",
   description: "Palace of the Dead - RDM",
   Content: () => (
-    <div className="m-6">Run submissions are closed for May 2026.</div>
+    <May2026Content />
   ),
 }
 
